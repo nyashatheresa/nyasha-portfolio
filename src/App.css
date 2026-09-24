@@ -85,9 +85,12 @@ a {
   letter-spacing: -0.065em;
   font-weight: 600;
 }
+.hero h1 {
+  color: #111111;
+}
 
 .hero h1 span {
-  color: #777;
+  color: #111111;
 }
 
 .heroBottom {
@@ -337,16 +340,17 @@ a {
 /* CONTACT */
 
 .contact {
-  background: #d9ff4f;
-  min-height: 75vh;
-  padding: 120px max(6%, calc((100vw - 1230px) / 2));
+  background: #111111;
+  color: #f5f3ee;
+  min-height: 85vh;
+  padding: 120px 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .contact .sectionLabel {
-  color: #505c22;
+  color: #999999;
 }
 
 .contact h2 {
@@ -355,22 +359,52 @@ a {
   line-height: 0.88;
   letter-spacing: -0.065em;
   margin-bottom: 60px;
+  color: #f5f3ee;
 }
 
-.contactButton {
-  width: fit-content;
-  font-size: 1.1rem;
-  .contactLinks {
+.contactLinks {
   display: flex;
   gap: 35px;
   flex-wrap: wrap;
 }
 
-.contactLinks .contactButton {
+.contactButton {
   width: fit-content;
   font-size: 1.1rem;
+  color: #f5f3ee;
+  text-decoration: none;
+  border-bottom: 1px solid #f5f3ee;
 }
+
+.contactButton:hover {
+  opacity: 0.6;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    min-height: 70vh;
+    padding: 90px 30px;
+  }
+
+  .contact .sectionLabel {
+    margin-bottom: 35px;
+  }
+
+  .contact h2 {
+    font-size: clamp(3.4rem, 15vw, 5.5rem);
+    line-height: 0.92;
+    margin-bottom: 45px;
+  }
+
+  .contactLinks {
+    gap: 25px;
+  }
+
+  .contactButton {
+    font-size: 1rem;
+  }
+}
+
 
 /* FOOTER */
 
@@ -401,14 +435,27 @@ footer {
   }
 
   .hero {
-    min-height: auto;
-    padding-top: 100px;
-    padding-bottom: 70px;
-  }
+  min-height: auto;
+  padding-top: 65px;
+  padding-bottom: 70px;
+  justify-content: flex-start;
+}
 
-  .hero h1 {
-    font-size: clamp(3.6rem, 16vw, 6rem);
-  }
+.eyebrow {
+  margin-bottom: 45px;
+}
+
+.hero h1 {
+  color: #111111;
+  font-size: clamp(3.4rem, 14vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.hero h1 span {
+  color: #111111;
+}
+
 
   .heroBottom {
     flex-direction: column;
@@ -480,4 +527,273 @@ footer {
   padding-bottom: 100px;
 }
 
+}
+/* ========================================
+   FINAL COLOUR SYSTEM
+   Black · White · Cream
+   ======================================== */
+
+:root {
+  --black: #111111;
+  --white: #ffffff;
+  --cream: #f5f1e8;
+  --muted-dark: #666666;
+  --muted-light: #c8c8c8;
+}
+
+/* MAIN PAGE */
+
+html,
+body,
+#root,
+.portfolio {
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+/* NAVIGATION */
+
+.navbar {
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+.logo,
+.navLinks a {
+  color: var(--black);
+}
+
+/* HERO */
+
+.hero {
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+.eyebrow {
+  color: var(--black);
+}
+
+/* Force ALL hero headline text to visible black */
+
+.hero h1,
+.hero h1 span {
+  color: var(--black) !important;
+}
+
+.intro {
+  color: var(--muted-dark);
+}
+
+.intro strong {
+  color: var(--black);
+}
+
+.primaryButton {
+  color: var(--black);
+  border-color: var(--black);
+}
+
+.currentlyBuilding {
+  color: var(--muted-dark);
+  border-color: #c9c4ba;
+}
+
+/* PROJECTS */
+
+.work {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.work .sectionHeader {
+  color: var(--white);
+  border-color: #444444;
+}
+
+.project {
+  border-color: #333333;
+}
+
+.projectNumber {
+  color: var(--muted-light);
+}
+
+.projectType {
+  color: var(--muted-light);
+}
+
+/* Force project titles to white */
+
+.project h2 {
+  color: var(--white) !important;
+}
+
+.projectDescription {
+  color: #d0d0d0;
+}
+
+.tags span {
+  color: var(--white);
+  border-color: #666666;
+}
+
+.projectLink {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.developmentStatus {
+  color: var(--white);
+}
+
+/* ABOUT */
+
+.about {
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+.about .sectionLabel {
+  color: var(--muted-dark);
+}
+
+.about h2,
+.about h2 span {
+  color: var(--black) !important;
+}
+
+.aboutGrid p {
+  color: var(--muted-dark);
+}
+
+/* CAPABILITIES */
+
+.capabilities {
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+.lightHeader {
+  color: var(--black);
+  border-color: #c9c4ba;
+}
+
+.capability {
+  border-color: #c9c4ba;
+}
+
+.capability h3 {
+  color: var(--black);
+}
+
+.capability p {
+  color: var(--muted-dark);
+}
+
+.capability span {
+  color: var(--muted-dark);
+}
+
+/* CONTACT */
+
+.contact {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+}
+
+.contact .sectionLabel {
+  color: var(--muted-light) !important;
+}
+
+.contact h2 {
+  color: var(--white) !important;
+}
+
+.contactButton,
+.contactLinks .contactButton {
+  color: var(--white) !important;
+  border-color: var(--white) !important;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--black);
+  color: var(--muted-light);
+}
+
+/* ========================================
+   MOBILE VISIBILITY
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  .navbar,
+  .hero {
+    background-color: var(--cream);
+  }
+
+  .logo,
+  .navLinks a,
+  .eyebrow {
+    color: var(--black) !important;
+  }
+
+  /* Prevent disappearing hero text on phones */
+
+  .hero h1,
+  .hero h1 span {
+    color: var(--black) !important;
+  }
+
+  .intro {
+    color: var(--muted-dark) !important;
+  }
+
+  .intro strong {
+    color: var(--black) !important;
+  }
+
+  /* Projects */
+
+  .work {
+    background-color: var(--black) !important;
+  }
+
+  .project h2 {
+    color: var(--white) !important;
+  }
+
+  .projectDescription,
+  .projectType,
+  .projectNumber {
+    color: #d0d0d0 !important;
+  }
+
+  /* About */
+
+  .about,
+  .capabilities {
+    background-color: var(--cream) !important;
+  }
+
+  .about h2,
+  .about h2 span,
+  .capability h3 {
+    color: var(--black) !important;
+  }
+
+  /* Contact */
+
+  .contact {
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+  }
+
+  .contact h2,
+  .contactButton,
+  .contactLinks .contactButton {
+    color: var(--white) !important;
+  }
 }
