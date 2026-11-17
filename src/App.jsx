@@ -134,6 +134,87 @@ function App() {
       <p className="projectNumber">03</p>
 
       <div className="projectInfo">
+        <p className="projectType">SECURITY SOLUTIONS WEBSITE · 2026</p>
+        <h2>ZimSecure Security</h2>
+
+        <p className="projectDescription">
+          A business website developed for a security solutions
+          company, creating a professional digital presence to
+          showcase its services and connect with potential clients.
+        </p>
+
+        <div className="tags">
+          <span>Web Development</span>
+          <span>Business Website</span>
+          <span>UI/UX</span>
+        </div>
+
+        <a
+          href="https://zimsecuresecurity.onrender.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="projectLink"
+        >
+          VIEW LIVE PROJECT ↗
+        </a>
+      </div>
+    </div>
+
+    <div className="projectImage">
+      <img
+        src="/zimsecure.png"
+        alt="ZimSecure Security website"
+      />
+    </div>
+  </article>
+
+  {/* PROJECT 04 */}
+  <article className="project">
+    <div className="projectTop">
+      <p className="projectNumber">04</p>
+
+      <div className="projectInfo">
+        <p className="projectType">DESIGN & CONSTRUCTION WEBSITE · 2026</p>
+        <h2>IMBA Design & Build</h2>
+
+        <p className="projectDescription">
+          A digital platform developed for IMBA Design & Build,
+          presenting the brand and its services through a
+          professional online presence designed to engage
+          prospective clients.
+        </p>
+
+        <div className="tags">
+          <span>Web Development</span>
+          <span>UI/UX</span>
+          <span>Brand Presentation</span>
+        </div>
+
+        <a
+          href="https://imba-website-six.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="projectLink"
+        >
+          VIEW LIVE PROJECT ↗
+        </a>
+      </div>
+    </div>
+
+    <div className="projectImage">
+      <img
+        src="/imba.png"
+        alt="IMBA Design and Build website"
+      />
+    </div>
+  </article>
+
+ {/* PROJECT 05 */}
+  <article className="project">
+    <div className="projectTop">
+      <p className="projectNumber">03</p>
+
+      <div className="projectInfo">
         <p className="projectType">
           NGO WEBSITE · LAUNCHING JANUARY 2027
         </p>
